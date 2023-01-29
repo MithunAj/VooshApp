@@ -4,6 +4,9 @@ const userController = require('../../../controllers/api/user_api');
 const orderController = require('../../../controllers/api/order_api')
 const passport = require('passport');
 
+router.get('/',function(req,res){
+    res.write("<h1>Home page</h1>")
+})
 
 router.post('/add-user',userController.addUser);
 
